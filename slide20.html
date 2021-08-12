@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 20</title>
+</head>
+<body>
+    <h1>Slide 20</h1>
+    <script>
+        const customErr = new Error('Custom Error made by the Developer.');
+        var someFunc = function(a) {
+            if (a === 4) {
+                throw customErr;
+                }
+            }
+
+            try {
+                someFunc(4);
+            } catch (e) {
+                console.log("Logging custom error.");
+                console.log(e);
+            }
+    </script>
+</body>
+</html>
